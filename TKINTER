@@ -198,3 +198,42 @@ mainloop()
 
 Note:Here, i worked on button like ,whenever i cliked on button it will provide message and bg color, fg color, font size width, activebackground and activeforeground.
 
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+*MENUBAR:
+ --------
+
+*tearoff=0
+*tearoff=1 (floating menu)
+*add_separator() : add line in file submenu after Save as .
+* add_cascade() :It will act as parent menu. 
+
+
+
+
+
+Eg:
+window=Tk()
+window.title("TASK")
+window.geometry("250x50")
+menu=Menu(window)
+file=Menu(menu,tearoff=0)
+file.add_command(label="New")
+file.add_command(label="Open")
+file.add_command(label="Save")
+file.add_command(label="Save as")
+file.add_separator()
+file.add_command(label="Exit")
+menu.add_cascade(label="File",menu=file)
+window.config(menu=menu)
+
+mainloop()
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
