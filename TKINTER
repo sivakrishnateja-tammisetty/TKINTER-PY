@@ -22,18 +22,98 @@
 *In Tkinter, a Label is a widget used to display text or images in a graphical user interface (GUI). 
 *Labels are typically used to provide information, captions, or instructions to the user. 
 
+
 Eg1:
 from tkinter import *
-window=Tk()                               
+window=Tk()                                    # window as object name & Tk is class.                             
 INPUT=Label(window,text="Hello World!")
 INPUT.pack()
-window.mainloop()
+window.mainloop()                              #if we didnt write mainloop(), it will not display ouput and error as well.
+
+
+
+ *NOTE: Here ,default dimenssions is vey small, title as  tk and background color as white
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+*BASIC MODIFICATIONS USING TKINTER:
+ ----------------------------------
+
+
+
+
+Eg:
+from tkinter import *
+window=Tk()
+window.title("TASK")
+window.geometry("700x700")
+window.config(bg="red")
+mainloop()
+
+
 
 Note:
- * window as object name & Tk is class.
- * if we didnt write mainloop(), it will not display ouput and error as well.
+Here i changed title as "TASK" & diensions as 700x700  lengthxheight & background color as red
 
 
 
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+*FRAMES AND BUTTONS USING TKINTER:
+ ---------------------------------
+
+
+
+Eg1:
+from tkinter import *
+window=Tk()
+window.title("TASK")
+window.geometry("500x700")
+window.config(bg="red")
+frame1= Frame(window,bg="yellow", width=50,height=50,cursor="dot")
+frame2= Frame(window,bg="green",width=50,height=50,cursor="dotbox")
+frame1.pack(side= TOP)
+frame2.pack(side= BOTTOM)
+
+mainloop()
+
+
+Note : In above Eg1,i creted frames  with background color and dimensions and cursors. Inside pack() we specify where that frames should be present.
+
+
+
+
+
+
+
+
+Eg2:
+from tkinter import *
+window=Tk()
+window.title("TASK")
+window.geometry("500x700")
+window.config(bg="red")
+frame1= Frame(window,width=50,height=50,cursor="dot")
+frame2= Frame(window,width=50,height=50,cursor="dotbox")
+button1=Button(frame1,text="Button1",bg="blue")
+button2=Button(frame2,text="Button2",bg="pink")
+button3=Button(frame1,text="Button2",fg="orange")
+frame1.pack(side= TOP)
+frame2.pack(side= BOTTOM)
+button1.pack()
+button2.pack()
+button3.pack()
+mainloop()
+
+
+Note:In above eample2,i created buttons and bg colors and fg colors.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
