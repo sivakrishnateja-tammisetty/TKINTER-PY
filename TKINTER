@@ -179,3 +179,22 @@ NOTE: Here, i add lables and label positions using pack()
 *HANDLING BUTTONS:
  ----------------
 
+
+
+Eg:
+from tkinter import *
+window=Tk()
+window.title("TASK")
+window.geometry("250x50")
+def log_entry():
+  print("Logged in")
+button=Button(window,text="LOGIN",command=log_entry,width=12,bg="red",fg="white",font=("bold",12),activebackground="black",activeforeground="white")
+button.pack()
+
+mainloop()
+
+
+
+
+Note:Here, i worked on button like ,whenever i cliked on button it will provide message and bg color, fg color, font size width, activebackground and activeforeground.
+
