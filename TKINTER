@@ -1,0 +1,39 @@
+ online compiler to run tkinter: repl.it
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  *TKINTER: TKINTER helps us to create GUI applications.
+  *GUI means graphical user interface.
+  *Tkinter is a built-in Python library for creating graphical user interfaces (GUIs). The name "Tkinter" is a portmanteau of "Tk" and "interface," where "Tk" refers to the Tk GUI toolkit, which Tkinter is based on.
+  *Tkinter provides a set of tools and widgets for creating windows, dialog boxes, buttons, text fields, labels, and other GUI elements that allow users to interact with Python applications in a more visually appealing and user-friendly way.
+
+
+  *INSTALL:  
+            To install the tkinter module in Python, you can typically use the command pip install python-tk or  if it's not already included with your Python distribution.
+
+  STEPS:
+  step 1: import tkinter module.
+  step 2: GUI interaction.
+  step 3: adding inputs
+  step 4: main loop
+
+
+*HELLO WORLD USING TKINTER:
+ -------------------------
+
+*In Tkinter, a Label is a widget used to display text or images in a graphical user interface (GUI). 
+*Labels are typically used to provide information, captions, or instructions to the user. 
+
+Eg1:
+from tkinter import *
+window=Tk()                               
+INPUT=Label(window,text="Hello World!")
+INPUT.pack()
+window.mainloop()
+
+Note:
+ * window as object name & Tk is class.
+ * if we didnt write mainloop(), it will not display ouput and error as well.
+
+
+
+
+
