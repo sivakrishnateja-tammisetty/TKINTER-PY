@@ -238,6 +238,35 @@ mainloop()
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 *MESSAGE BOX:
- -----------
+ ----------
+* If we want message box,we want to import message box from tkinter(import tkinter.messagebox)
+
+
+ * Using showinfo(title,"msg") method :
+       It will show 'i' symbol
+  Eg:
+
+ from tkinter import *
+ import tkinter.messagebox
+ window=Tk()
+ tkinter.messagebox.showinfo("Info","Running out of time")
+
+ mainloop()
+
+
+
+
+*Using showwarning(title,msg) method:
+   It will show warning symbol
+
+
+ Eg:
+ from tkinter import *
+ import tkinter.messagebox
+ window=Tk()
+ tkinter.messagebox.showwarning("Info","Running out of time")
+
+ mainloop()
 
