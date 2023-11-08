@@ -211,6 +211,7 @@ Note:Here, i worked on button like ,whenever i cliked on button it will provide 
 *tearoff=1 (floating menu)
 *add_separator() : add line in file submenu after Save as .
 * add_cascade() :It will act as parent menu. 
+*Here i add functionality ,whenever i clicked on Exit,i want to close file menu window closed.
 
 
 
@@ -227,7 +228,7 @@ file.add_command(label="Open")
 file.add_command(label="Save")
 file.add_command(label="Save as")
 file.add_separator()
-file.add_command(label="Exit")
+file.add_command(label="Exit",command=window.quit)
 menu.add_cascade(label="File",menu=file)
 window.config(menu=menu)
 
@@ -235,5 +236,8 @@ mainloop()
 
 
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*MESSAGE BOX:
+ -----------
 
