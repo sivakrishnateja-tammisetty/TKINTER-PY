@@ -270,3 +270,56 @@ mainloop()
 
  mainloop()
 
+
+
+
+
+
+
+*using showerror(title,msg) method:
+   It will show error symbol
+
+ Eg:
+ from tkinter import *
+ import tkinter.messagebox
+ window=Tk()
+ tkinter.messagebox.showerror("Info","Running out of time")
+
+ mainloop()
+
+
+
+
+
+ Eg2: using askyesno
+
+from tkinter import *
+import tkinter.messagebox
+window=Tk()
+tkinter.messagebox.showerror("Info","Running out of time")
+question=tkinter.messagebox.askyesno("Weather","Will it rain?")
+if question == True:
+  print("Take an umberalla")
+else:
+  print("Yes")
+
+mainloop() 
+
+
+
+Eg3: using askokcancel
+
+from tkinter import *
+import tkinter.messagebox
+window=Tk()
+tkinter.messagebox.showerror("Info","Running out of time")
+question=tkinter.messagebox.askokcancel("Weather","Will it rain?")
+if question == True:
+  print("Take an umberalla")
+else:
+  print("Yes")
+
+mainloop()
+
+
+
