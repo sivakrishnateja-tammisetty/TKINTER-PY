@@ -169,6 +169,13 @@ label2.pack(side=LEFT,fill=Y,expand=True)
 label3.pack(side=RIGHT,fill=Y,expand=False)
 mainloop()
 
-
 NOTE: Here, i add lables and label positions using pack()
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+*HANDLING BUTTONS:
+ ----------------
 
