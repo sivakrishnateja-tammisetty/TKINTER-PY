@@ -117,3 +117,38 @@ Note:In above eample2,i created buttons and bg colors and fg colors.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+*ENTRY BOX AND GRID LAYOUT:
+ --------------------------
+
+*GRID :Grid takes 2 parameters(rows & columns).
+
+
+Eg1:
+from tkinter import *
+window=Tk()
+window.title("TASK")
+window.geometry("250x50")
+label1=Label(window,text="Mail")
+label2=Label(window,text="Password")
+e1=Entry(window,width=40,borderwidth=5)
+e2=Entry(window,width=40,borderwidth=5)
+#label1.pack() #title was prsnt at middel top
+label1.grid(row=0,column=1)
+label2.grid(row=1,column=1)
+e1.grid(row=0,column=2)
+e2.grid(row=1,column=2)
+mainloop()
+
+
+
+Note: 
+ *Here, i created lables and entry box.
+ *Pak() -->title was prsnt at middle top.
+ * grid() --> title was prsnt at specified row & column.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
