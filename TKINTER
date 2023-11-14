@@ -437,4 +437,22 @@ mainloop()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
+* PLACE:
+  ------
+*place takes two arguments x axsis and y axsis
+*place is similar to pack.
+
+
+
+Eg:
+from  tkinter import *
+window=Tk()
+window.geometry('500x500')
+btn=Button(window,text="Button",height=2,width=10)
+btn.place(x=200,y=200)
+mainloop()
+
+
+
+
 
