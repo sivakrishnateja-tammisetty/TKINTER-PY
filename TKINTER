@@ -359,3 +359,20 @@ mainloop()
 
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+*MESSAGE BOX 2:
+----------------
+*Message is a class.
+
+Eg:method1
+
+from  tkinter import *
+window=Tk()
+window.geometry('500x500')
+message=Message(window,text="python")
+message.pack()
+mainloop()
+
+
+
