@@ -392,3 +392,25 @@ mainloop()
 
 
 
+Eg3: message box and entry box
+
+from  tkinter import *
+window=Tk()
+var=StringVar()
+entry_var=StringVar()
+def insert():
+  result=entry_var.get()
+  var.set(result)
+message=Message(window,textvariable=var,relief=RAISED,padx=50,pady=50)
+entry=Entry(window,textvariable=entry_var)
+button=Button(window,text="OK",command=insert)
+message.pack()
+entry.pack()
+button.pack()
+mainloop()
+
+
+o/p:when i typed message in entry box and clicked ok button ,the message was displayed on message box.
+
+
+
