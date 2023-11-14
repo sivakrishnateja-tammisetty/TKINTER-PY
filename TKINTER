@@ -413,4 +413,28 @@ mainloop()
 o/p:when i typed message in entry box and clicked ok button ,the message was displayed on message box.
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*CHECK BOX:  ==>using tkinter
+ ----------
+
+Eg:
+from  tkinter import *
+window=Tk()
+window.geometry('500x500')
+check_box_1=IntVar()
+check_box_2=IntVar()
+check_box_3=IntVar()
+check_btn_1=Checkbutton(window,text="siva",onvalue=1,offvalue=0,height=2,width=10)
+check_btn_2=Checkbutton(window,text="krishna",onvalue=1,offvalue=0,height=2,width=10)
+check_btn_3=Checkbutton(window,text="Teja",onvalue=1,offvalue=0,height=2,width=10)
+check_btn_1.pack()
+check_btn_2.pack()
+check_btn_3.pack()
+mainloop()
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
