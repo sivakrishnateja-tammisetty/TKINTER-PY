@@ -376,3 +376,19 @@ mainloop()
 
 
 
+
+Eg:method 2
+
+*relief is used to create 2D effect.
+*padx and pady are for alignment of text.
+
+from  tkinter import *
+window=Tk()
+var=StringVar()
+message=Message(window,textvariable=var,relief=RAISED,padx=20,pady=20)
+var.set("Python")
+message.pack()
+mainloop()
+
+
+
